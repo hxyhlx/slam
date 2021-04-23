@@ -1,0 +1,2 @@
+mavros-master/libmavconn:mavros-master/mavros:mavros-master/mavros_extras:mavros-master/mavros_msgs:mavros-master/test_mavros
+-DCATKIN_DEVEL_PREFIX=/home/xhe/offboard_ws/devel -DCMAKE_INSTALL_PREFIX=/home/xhe/offboard_ws/install -G Unix Makefiles
