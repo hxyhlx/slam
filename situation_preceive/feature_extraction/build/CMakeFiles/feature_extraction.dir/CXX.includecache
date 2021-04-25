@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xhe/situation_preceive/feature_extraction/feature_extraction.cpp
+iostream
+-
+opencv2/core/core.hpp
+-
+opencv2/features2d/features2d.hpp
+-
+opencv2/highgui/highgui.hpp
+-
+fstream
+-
+sstream
+-
+iomanip
+-
+random
+-
+cmath
+-
+cfloat
+-
+

@@ -1,4 +1,4 @@
-prefix=/home/xhe/offboard_ws/devel
+prefix=/home/xhe/hexy/offboard_ws/devel
 
 Name: test_mavros
 Description: Description of test_mavros

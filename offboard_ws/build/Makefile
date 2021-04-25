@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xhe/offboard_ws/src
+CMAKE_SOURCE_DIR = /home/xhe/hexy/offboard_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xhe/offboard_ws/build
+CMAKE_BINARY_DIR = /home/xhe/hexy/offboard_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xhe/offboard_ws/build/CMakeFiles /home/xhe/offboard_ws/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xhe/hexy/offboard_ws/build/CMakeFiles /home/xhe/hexy/offboard_ws/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xhe/offboard_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xhe/hexy/offboard_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -294,7 +294,7 @@ sitl_test_node: cmake_check_build_system
 
 # fast build rule for target.
 sitl_test_node/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/sitl_test_node.dir/build.make mavros-master/test_mavros/CMakeFiles/sitl_test_node.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/sitl_test_node.dir/build.make test_mavros/CMakeFiles/sitl_test_node.dir/build
 .PHONY : sitl_test_node/fast
 
 #=============================================================================
@@ -307,7 +307,7 @@ std_srvs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 std_srvs_generate_messages_nodejs/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make mavros-master/test_mavros/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make test_mavros/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
 .PHONY : std_srvs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -320,7 +320,7 @@ std_srvs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 std_srvs_generate_messages_cpp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make mavros-master/test_mavros/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make test_mavros/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
 .PHONY : std_srvs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -333,7 +333,7 @@ gazebo_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 gazebo_msgs_generate_messages_eus/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build.make mavros-master/test_mavros/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build.make test_mavros/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build
 .PHONY : gazebo_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -346,7 +346,7 @@ visualization_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 visualization_msgs_generate_messages_py/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make mavros-master/test_mavros/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make test_mavros/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
 .PHONY : visualization_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -359,7 +359,7 @@ visualization_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 visualization_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make mavros-master/test_mavros/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make test_mavros/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
 .PHONY : visualization_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -372,7 +372,7 @@ visualization_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 visualization_msgs_generate_messages_eus/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make mavros-master/test_mavros/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make test_mavros/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
 .PHONY : visualization_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -385,7 +385,7 @@ tf2_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 tf2_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make mavros-master/test_mavros/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make test_mavros/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
 .PHONY : tf2_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -398,7 +398,7 @@ tf2_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 tf2_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make mavros-master/test_mavros/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make test_mavros/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
 .PHONY : tf2_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -411,7 +411,7 @@ tf2_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 tf2_msgs_generate_messages_py/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make mavros-master/test_mavros/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make test_mavros/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
 .PHONY : tf2_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -424,7 +424,7 @@ actionlib_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 actionlib_generate_messages_py/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/actionlib_generate_messages_py.dir/build.make mavros-master/test_mavros/CMakeFiles/actionlib_generate_messages_py.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/actionlib_generate_messages_py.dir/build.make test_mavros/CMakeFiles/actionlib_generate_messages_py.dir/build
 .PHONY : actionlib_generate_messages_py/fast
 
 #=============================================================================
@@ -437,7 +437,7 @@ actionlib_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 actionlib_generate_messages_nodejs/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make mavros-master/test_mavros/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make test_mavros/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
 .PHONY : actionlib_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -450,7 +450,7 @@ actionlib_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 actionlib_generate_messages_cpp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make mavros-master/test_mavros/CMakeFiles/actionlib_generate_messages_cpp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make test_mavros/CMakeFiles/actionlib_generate_messages_cpp.dir/build
 .PHONY : actionlib_generate_messages_cpp/fast
 
 #=============================================================================
@@ -463,7 +463,7 @@ dynamic_reconfigure_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_cpp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make mavros-master/test_mavros/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make test_mavros/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_cpp/fast
 
 #=============================================================================
@@ -476,7 +476,7 @@ control_toolbox_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 control_toolbox_generate_messages_nodejs/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/control_toolbox_generate_messages_nodejs.dir/build.make mavros-master/test_mavros/CMakeFiles/control_toolbox_generate_messages_nodejs.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/control_toolbox_generate_messages_nodejs.dir/build.make test_mavros/CMakeFiles/control_toolbox_generate_messages_nodejs.dir/build
 .PHONY : control_toolbox_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -489,7 +489,7 @@ rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make mavros-master/test_mavros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make test_mavros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -502,7 +502,7 @@ trajectory_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make mavros-master/test_mavros/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make test_mavros/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build
 .PHONY : trajectory_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -515,7 +515,7 @@ trajectory_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make mavros-master/test_mavros/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make test_mavros/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
 .PHONY : trajectory_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -528,7 +528,7 @@ gazebo_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 gazebo_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build.make mavros-master/test_mavros/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build.make test_mavros/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build
 .PHONY : gazebo_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -541,7 +541,7 @@ dynamic_reconfigure_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_lisp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make mavros-master/test_mavros/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make test_mavros/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_lisp/fast
 
 #=============================================================================
@@ -554,7 +554,7 @@ geographic_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 geographic_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/build.make mavros-master/test_mavros/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/build.make test_mavros/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/build
 .PHONY : geographic_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -567,7 +567,7 @@ trajectory_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make mavros-master/test_mavros/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make test_mavros/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
 .PHONY : trajectory_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -580,7 +580,7 @@ mavros_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 mavros_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/build.make mavros-master/test_mavros/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/build.make test_mavros/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/build
 .PHONY : mavros_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -593,7 +593,7 @@ geometry_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 geometry_msgs_generate_messages_py/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make mavros-master/test_mavros/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make test_mavros/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -606,7 +606,7 @@ geometry_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 geometry_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make mavros-master/test_mavros/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make test_mavros/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
 .PHONY : geometry_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -619,7 +619,7 @@ actionlib_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 actionlib_generate_messages_lisp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make mavros-master/test_mavros/CMakeFiles/actionlib_generate_messages_lisp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make test_mavros/CMakeFiles/actionlib_generate_messages_lisp.dir/build
 .PHONY : actionlib_generate_messages_lisp/fast
 
 #=============================================================================
@@ -632,7 +632,7 @@ geometry_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 geometry_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make mavros-master/test_mavros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make test_mavros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
 .PHONY : geometry_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -645,7 +645,7 @@ geometry_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 geometry_msgs_generate_messages_eus/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make mavros-master/test_mavros/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make test_mavros/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -658,7 +658,7 @@ dynamic_reconfigure_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_nodejs/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make mavros-master/test_mavros/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make test_mavros/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -671,7 +671,7 @@ std_srvs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 std_srvs_generate_messages_lisp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make mavros-master/test_mavros/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make test_mavros/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
 .PHONY : std_srvs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -684,7 +684,7 @@ _catkin_empty_exported_target: cmake_check_build_system
 
 # fast build rule for target.
 _catkin_empty_exported_target/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/_catkin_empty_exported_target.dir/build.make mavros-master/test_mavros/CMakeFiles/_catkin_empty_exported_target.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/_catkin_empty_exported_target.dir/build.make test_mavros/CMakeFiles/_catkin_empty_exported_target.dir/build
 .PHONY : _catkin_empty_exported_target/fast
 
 #=============================================================================
@@ -697,7 +697,7 @@ sensor_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_eus/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make mavros-master/test_mavros/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make test_mavros/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -710,7 +710,7 @@ roscpp_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make mavros-master/test_mavros/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make test_mavros/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -723,7 +723,7 @@ std_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make mavros-master/test_mavros/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make test_mavros/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -736,7 +736,7 @@ control_toolbox_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 control_toolbox_generate_messages_lisp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/control_toolbox_generate_messages_lisp.dir/build.make mavros-master/test_mavros/CMakeFiles/control_toolbox_generate_messages_lisp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/control_toolbox_generate_messages_lisp.dir/build.make test_mavros/CMakeFiles/control_toolbox_generate_messages_lisp.dir/build
 .PHONY : control_toolbox_generate_messages_lisp/fast
 
 #=============================================================================
@@ -749,7 +749,7 @@ std_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make mavros-master/test_mavros/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make test_mavros/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -762,7 +762,7 @@ control_toolbox_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 control_toolbox_generate_messages_py/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/control_toolbox_generate_messages_py.dir/build.make mavros-master/test_mavros/CMakeFiles/control_toolbox_generate_messages_py.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/control_toolbox_generate_messages_py.dir/build.make test_mavros/CMakeFiles/control_toolbox_generate_messages_py.dir/build
 .PHONY : control_toolbox_generate_messages_py/fast
 
 #=============================================================================
@@ -775,7 +775,7 @@ control_toolbox_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 control_toolbox_generate_messages_eus/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/control_toolbox_generate_messages_eus.dir/build.make mavros-master/test_mavros/CMakeFiles/control_toolbox_generate_messages_eus.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/control_toolbox_generate_messages_eus.dir/build.make test_mavros/CMakeFiles/control_toolbox_generate_messages_eus.dir/build
 .PHONY : control_toolbox_generate_messages_eus/fast
 
 #=============================================================================
@@ -788,7 +788,7 @@ std_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/std_msgs_generate_messages_py.dir/build.make mavros-master/test_mavros/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/std_msgs_generate_messages_py.dir/build.make test_mavros/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -801,7 +801,7 @@ control_toolbox_gencfg: cmake_check_build_system
 
 # fast build rule for target.
 control_toolbox_gencfg/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/control_toolbox_gencfg.dir/build.make mavros-master/test_mavros/CMakeFiles/control_toolbox_gencfg.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/control_toolbox_gencfg.dir/build.make test_mavros/CMakeFiles/control_toolbox_gencfg.dir/build
 .PHONY : control_toolbox_gencfg/fast
 
 #=============================================================================
@@ -814,7 +814,7 @@ rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make mavros-master/test_mavros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make test_mavros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -827,7 +827,7 @@ geographic_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 geographic_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/build.make mavros-master/test_mavros/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/build.make test_mavros/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/build
 .PHONY : geographic_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -840,7 +840,7 @@ actionlib_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 actionlib_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make mavros-master/test_mavros/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make test_mavros/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
 .PHONY : actionlib_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -853,7 +853,7 @@ trajectory_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_eus/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build.make mavros-master/test_mavros/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build.make test_mavros/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build
 .PHONY : trajectory_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -866,7 +866,7 @@ roscpp_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/roscpp_generate_messages_py.dir/build.make mavros-master/test_mavros/CMakeFiles/roscpp_generate_messages_py.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/roscpp_generate_messages_py.dir/build.make test_mavros/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 #=============================================================================
@@ -879,7 +879,7 @@ dynamic_reconfigure_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_eus/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make mavros-master/test_mavros/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make test_mavros/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_eus/fast
 
 #=============================================================================
@@ -892,7 +892,7 @@ diagnostic_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 diagnostic_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make mavros-master/test_mavros/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make test_mavros/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build
 .PHONY : diagnostic_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -905,7 +905,7 @@ std_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make mavros-master/test_mavros/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make test_mavros/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -918,7 +918,7 @@ control_toolbox_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 control_toolbox_generate_messages_cpp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/control_toolbox_generate_messages_cpp.dir/build.make mavros-master/test_mavros/CMakeFiles/control_toolbox_generate_messages_cpp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/control_toolbox_generate_messages_cpp.dir/build.make test_mavros/CMakeFiles/control_toolbox_generate_messages_cpp.dir/build
 .PHONY : control_toolbox_generate_messages_cpp/fast
 
 #=============================================================================
@@ -931,7 +931,7 @@ uuid_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 uuid_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build.make mavros-master/test_mavros/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build.make test_mavros/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build
 .PHONY : uuid_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -944,7 +944,7 @@ control_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 control_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/control_msgs_generate_messages_cpp.dir/build.make mavros-master/test_mavros/CMakeFiles/control_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/control_msgs_generate_messages_cpp.dir/build.make test_mavros/CMakeFiles/control_msgs_generate_messages_cpp.dir/build
 .PHONY : control_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -957,7 +957,7 @@ actionlib_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 actionlib_msgs_generate_messages_py/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make mavros-master/test_mavros/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make test_mavros/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
 .PHONY : actionlib_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -970,7 +970,7 @@ control_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 control_msgs_generate_messages_eus/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/control_msgs_generate_messages_eus.dir/build.make mavros-master/test_mavros/CMakeFiles/control_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/control_msgs_generate_messages_eus.dir/build.make test_mavros/CMakeFiles/control_msgs_generate_messages_eus.dir/build
 .PHONY : control_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -983,7 +983,7 @@ geometry_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 geometry_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make mavros-master/test_mavros/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make test_mavros/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
 .PHONY : geometry_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -996,7 +996,7 @@ uuid_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 uuid_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/build.make mavros-master/test_mavros/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/build.make test_mavros/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/build
 .PHONY : uuid_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -1009,7 +1009,7 @@ trajectory_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_py/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make mavros-master/test_mavros/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make test_mavros/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
 .PHONY : trajectory_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -1022,7 +1022,7 @@ visualization_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 visualization_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make mavros-master/test_mavros/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make test_mavros/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
 .PHONY : visualization_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -1035,7 +1035,7 @@ std_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_eus/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make mavros-master/test_mavros/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make test_mavros/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -1048,7 +1048,7 @@ actionlib_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 actionlib_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make mavros-master/test_mavros/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make test_mavros/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
 .PHONY : actionlib_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -1061,7 +1061,7 @@ control_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 control_msgs_generate_messages_py/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/control_msgs_generate_messages_py.dir/build.make mavros-master/test_mavros/CMakeFiles/control_msgs_generate_messages_py.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/control_msgs_generate_messages_py.dir/build.make test_mavros/CMakeFiles/control_msgs_generate_messages_py.dir/build
 .PHONY : control_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -1074,7 +1074,7 @@ roscpp_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_eus/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/roscpp_generate_messages_eus.dir/build.make mavros-master/test_mavros/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/roscpp_generate_messages_eus.dir/build.make test_mavros/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
 #=============================================================================
@@ -1087,7 +1087,7 @@ rosgraph_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make mavros-master/test_mavros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make test_mavros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -1100,7 +1100,7 @@ actionlib_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 actionlib_msgs_generate_messages_eus/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make mavros-master/test_mavros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make test_mavros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
 .PHONY : actionlib_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -1113,7 +1113,7 @@ actionlib_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 actionlib_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make mavros-master/test_mavros/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make test_mavros/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
 .PHONY : actionlib_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -1126,7 +1126,7 @@ actionlib_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 actionlib_generate_messages_eus/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/actionlib_generate_messages_eus.dir/build.make mavros-master/test_mavros/CMakeFiles/actionlib_generate_messages_eus.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/actionlib_generate_messages_eus.dir/build.make test_mavros/CMakeFiles/actionlib_generate_messages_eus.dir/build
 .PHONY : actionlib_generate_messages_eus/fast
 
 #=============================================================================
@@ -1139,7 +1139,7 @@ diagnostic_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 diagnostic_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build.make mavros-master/test_mavros/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build.make test_mavros/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build
 .PHONY : diagnostic_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -1152,7 +1152,7 @@ dynamic_reconfigure_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_py/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make mavros-master/test_mavros/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make test_mavros/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_py/fast
 
 #=============================================================================
@@ -1165,7 +1165,7 @@ control_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 control_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/control_msgs_generate_messages_lisp.dir/build.make mavros-master/test_mavros/CMakeFiles/control_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/control_msgs_generate_messages_lisp.dir/build.make test_mavros/CMakeFiles/control_msgs_generate_messages_lisp.dir/build
 .PHONY : control_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -1178,7 +1178,7 @@ diagnostic_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 diagnostic_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build.make mavros-master/test_mavros/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build.make test_mavros/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build
 .PHONY : diagnostic_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -1191,7 +1191,7 @@ mavros_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 mavros_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/build.make mavros-master/test_mavros/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/build.make test_mavros/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/build
 .PHONY : mavros_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -1204,7 +1204,7 @@ sensor_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make mavros-master/test_mavros/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make test_mavros/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
 .PHONY : sensor_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -1217,7 +1217,7 @@ std_srvs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 std_srvs_generate_messages_eus/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make mavros-master/test_mavros/CMakeFiles/std_srvs_generate_messages_eus.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make test_mavros/CMakeFiles/std_srvs_generate_messages_eus.dir/build
 .PHONY : std_srvs_generate_messages_eus/fast
 
 #=============================================================================
@@ -1230,7 +1230,7 @@ roscpp_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make mavros-master/test_mavros/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make test_mavros/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 #=============================================================================
@@ -1243,7 +1243,7 @@ gazebo_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 gazebo_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build.make mavros-master/test_mavros/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build.make test_mavros/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build
 .PHONY : gazebo_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -1256,7 +1256,7 @@ rosgraph_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make mavros-master/test_mavros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make test_mavros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -1269,7 +1269,7 @@ rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make mavros-master/test_mavros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make test_mavros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -1282,7 +1282,7 @@ diagnostic_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 diagnostic_msgs_generate_messages_eus/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build.make mavros-master/test_mavros/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build.make test_mavros/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build
 .PHONY : diagnostic_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -1295,7 +1295,7 @@ gazebo_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 gazebo_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build.make mavros-master/test_mavros/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build.make test_mavros/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build
 .PHONY : gazebo_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -1308,7 +1308,7 @@ diagnostic_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 diagnostic_msgs_generate_messages_py/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build.make mavros-master/test_mavros/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build.make test_mavros/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build
 .PHONY : diagnostic_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -1321,7 +1321,7 @@ control_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 control_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/control_msgs_generate_messages_nodejs.dir/build.make mavros-master/test_mavros/CMakeFiles/control_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/control_msgs_generate_messages_nodejs.dir/build.make test_mavros/CMakeFiles/control_msgs_generate_messages_nodejs.dir/build
 .PHONY : control_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -1334,7 +1334,7 @@ roscpp_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make mavros-master/test_mavros/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make test_mavros/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 #=============================================================================
@@ -1347,7 +1347,7 @@ geographic_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 geographic_msgs_generate_messages_py/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/geographic_msgs_generate_messages_py.dir/build.make mavros-master/test_mavros/CMakeFiles/geographic_msgs_generate_messages_py.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/geographic_msgs_generate_messages_py.dir/build.make test_mavros/CMakeFiles/geographic_msgs_generate_messages_py.dir/build
 .PHONY : geographic_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -1360,7 +1360,7 @@ uuid_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 uuid_msgs_generate_messages_eus/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build.make mavros-master/test_mavros/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build.make test_mavros/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build
 .PHONY : uuid_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -1373,7 +1373,7 @@ geographic_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 geographic_msgs_generate_messages_eus/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/geographic_msgs_generate_messages_eus.dir/build.make mavros-master/test_mavros/CMakeFiles/geographic_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/geographic_msgs_generate_messages_eus.dir/build.make test_mavros/CMakeFiles/geographic_msgs_generate_messages_eus.dir/build
 .PHONY : geographic_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -1386,7 +1386,7 @@ std_srvs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 std_srvs_generate_messages_py/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/std_srvs_generate_messages_py.dir/build.make mavros-master/test_mavros/CMakeFiles/std_srvs_generate_messages_py.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/std_srvs_generate_messages_py.dir/build.make test_mavros/CMakeFiles/std_srvs_generate_messages_py.dir/build
 .PHONY : std_srvs_generate_messages_py/fast
 
 #=============================================================================
@@ -1399,7 +1399,7 @@ geographic_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 geographic_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build.make mavros-master/test_mavros/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build.make test_mavros/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build
 .PHONY : geographic_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -1412,7 +1412,7 @@ uuid_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 uuid_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/build.make mavros-master/test_mavros/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/build.make test_mavros/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/build
 .PHONY : uuid_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -1425,7 +1425,7 @@ gazebo_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 gazebo_msgs_generate_messages_py/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build.make mavros-master/test_mavros/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build.make test_mavros/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build
 .PHONY : gazebo_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -1438,7 +1438,7 @@ uuid_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 uuid_msgs_generate_messages_py/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/uuid_msgs_generate_messages_py.dir/build.make mavros-master/test_mavros/CMakeFiles/uuid_msgs_generate_messages_py.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/uuid_msgs_generate_messages_py.dir/build.make test_mavros/CMakeFiles/uuid_msgs_generate_messages_py.dir/build
 .PHONY : uuid_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -1451,7 +1451,7 @@ mavros_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 mavros_msgs_generate_messages_eus/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/mavros_msgs_generate_messages_eus.dir/build.make mavros-master/test_mavros/CMakeFiles/mavros_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/mavros_msgs_generate_messages_eus.dir/build.make test_mavros/CMakeFiles/mavros_msgs_generate_messages_eus.dir/build
 .PHONY : mavros_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -1464,7 +1464,7 @@ mavros_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 mavros_msgs_generate_messages_py/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/mavros_msgs_generate_messages_py.dir/build.make mavros-master/test_mavros/CMakeFiles/mavros_msgs_generate_messages_py.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/mavros_msgs_generate_messages_py.dir/build.make test_mavros/CMakeFiles/mavros_msgs_generate_messages_py.dir/build
 .PHONY : mavros_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -1477,7 +1477,7 @@ mavros_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 mavros_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/build.make mavros-master/test_mavros/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/build.make test_mavros/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/build
 .PHONY : mavros_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -1490,7 +1490,7 @@ sensor_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make mavros-master/test_mavros/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make test_mavros/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 .PHONY : sensor_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -1503,7 +1503,7 @@ nav_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 nav_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make mavros-master/test_mavros/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make test_mavros/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
 .PHONY : nav_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -1516,7 +1516,7 @@ sensor_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make mavros-master/test_mavros/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make test_mavros/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 .PHONY : sensor_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -1529,7 +1529,7 @@ sensor_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_py/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make mavros-master/test_mavros/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make test_mavros/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -1542,7 +1542,7 @@ visualization_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 visualization_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make mavros-master/test_mavros/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make test_mavros/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
 .PHONY : visualization_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -1555,7 +1555,7 @@ tf2_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 tf2_msgs_generate_messages_eus/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make mavros-master/test_mavros/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make test_mavros/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
 .PHONY : tf2_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -1568,7 +1568,7 @@ nav_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 nav_msgs_generate_messages_eus/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make mavros-master/test_mavros/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make test_mavros/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
 .PHONY : nav_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -1581,7 +1581,7 @@ nav_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 nav_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make mavros-master/test_mavros/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make test_mavros/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
 .PHONY : nav_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -1594,7 +1594,7 @@ nav_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 nav_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make mavros-master/test_mavros/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make test_mavros/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
 .PHONY : nav_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -1607,7 +1607,7 @@ tf2_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 tf2_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make mavros-master/test_mavros/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make test_mavros/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
 .PHONY : tf2_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -1620,7 +1620,7 @@ dynamic_reconfigure_gencfg: cmake_check_build_system
 
 # fast build rule for target.
 dynamic_reconfigure_gencfg/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make mavros-master/test_mavros/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make test_mavros/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
 .PHONY : dynamic_reconfigure_gencfg/fast
 
 #=============================================================================
@@ -1633,7 +1633,7 @@ nav_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 nav_msgs_generate_messages_py/fast:
-	$(MAKE) -f mavros-master/test_mavros/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make mavros-master/test_mavros/CMakeFiles/nav_msgs_generate_messages_py.dir/build
+	$(MAKE) -f test_mavros/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make test_mavros/CMakeFiles/nav_msgs_generate_messages_py.dir/build
 .PHONY : nav_msgs_generate_messages_py/fast
 
 # Help Target

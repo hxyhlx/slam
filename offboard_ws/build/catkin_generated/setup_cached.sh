@@ -7,4 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/xhe/offboard_ws/build'
+export PWD='/home/xhe/hexy/offboard_ws/build'
