@@ -2,9 +2,11 @@
     <!-- SITL test base node launcher -->
     <arg name="num_of_tests" default="1" />  <!-- number of repetitions of the same test -->
     <arg name="rate" default="10.0" />      <!-- loop rate of tests -->
-    <arg name="use_pid" default="true" />     <!-- use default PID velocity control -->
+    <arg name="use_pid" default="false" />     <!-- use default PID velocity control -->
+    <arg name="kp" default="0.5" />     <!-- use default PID velocity control -->
+    <arg name="vel_limit" default="1" />     <!-- use default PID velocity control -->
 
-    <arg name="mode" default="position" />     <!-- position ctl mode -->
+    <arg name="mode" default="velocity" />     <!-- position ctl mode -->
     <arg name="shape" default="square" />     <!-- square shaped path -->
 
     <!-- if use_pid is set, PID values should be configured -->

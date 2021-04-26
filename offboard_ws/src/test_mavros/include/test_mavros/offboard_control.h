@@ -61,6 +61,8 @@ private:
 	double yawrate_d_gain_;
 	double yawrate_i_max_;
 	double yawrate_i_min_;
+	double kp_;
+	double vel_limit_;
 
 	control_mode mode_;
 	path_shape shape_;

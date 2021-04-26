@@ -27,6 +27,8 @@ namespace testsetup {
 		nh_sp_.param("rate", rate_, 10.0);
 		nh_sp_.param("num_of_tests", num_of_tests_, 10);
 		nh_sp_.param("use_pid", use_pid_, true);
+		nh_sp_.param("kp", kp_, 1.0);
+		nh_sp_.param("vel_limit", vel_limit_, 1.0);
 
 		if (use_pid_) {
 
@@ -95,9 +97,9 @@ namespace testsetup {
 		ROS_INFO("SITL Test: Offboard control test running!");
 
 		mtarget_.header.frame_id = "map";
-		mtarget_.pose.position.x = 0;
+		mtarget_.pose.position.x = -0.5;
     	mtarget_.pose.position.y = 0;
-    	mtarget_.pose.position.z = 10;
+    	mtarget_.pose.position.z = 15;
 	//	local_pos_sp_pub.publish(ps);
 		
 		if (mode_ == POSITION) {
@@ -118,7 +120,6 @@ namespace testsetup {
 		if (shape_ == SQUARE) {
 			ROS_INFO("Test option: square-shaped path...");
 			square_path_motion(loop_rate, mode_);
-                            // wait_and_move(mtarget_);
 		}
 		else if (shape_ == FOLLOW) {
 			ROS_INFO("Test follow...");
@@ -156,19 +157,19 @@ namespace testsetup {
 			// motion routine
 			switch (pos_target) {
 			case 1:
-				tf::pointEigenToMsg(pos_setpoint(0, 10, 10), mtarget_.pose.position);
+				tf::pointEigenToMsg(pos_setpoint(10, 10, 15), mtarget_.pose.position);
 				ROS_INFO("Arrived 1 ...");
 				break;
 			case 2:
-				tf::pointEigenToMsg(pos_setpoint(-20, 10, 10), mtarget_.pose.position);
+				tf::pointEigenToMsg(pos_setpoint(-10, 10, 15), mtarget_.pose.position);
 				ROS_INFO("Arrived 2 ...");
 				break;
 			case 3:
-				tf::pointEigenToMsg(pos_setpoint(-20, -10, 10), mtarget_.pose.position);
+				tf::pointEigenToMsg(pos_setpoint(-10, -10, 15), mtarget_.pose.position);
 				ROS_INFO("Arrived 3 ...");
 				break;
 			case 4:
-				tf::pointEigenToMsg(pos_setpoint(0, -10, 10), mtarget_.pose.position);
+				tf::pointEigenToMsg(pos_setpoint(10, -10, 15), mtarget_.pose.position);
 				ROS_INFO("Arrived 4 ...");
 				break;
 			default:
@@ -224,7 +225,12 @@ namespace testsetup {
 				if (use_pid_)
 					tf::vectorEigenToMsg(pid_.compute_linvel_effort(dest, current_, last_time), vs_.twist.linear);
 				else
-					tf::vectorEigenToMsg(dest - current_, vs_.twist.linear);
+				{
+					double k = 1.0;
+					if(kp_*distance > vel_limit_)
+						k = vel_limit_/(kp_*distance);						
+					tf::vectorEigenToMsg(kp_*k*(dest - current_), vs_.twist.linear);
+				}
 				vel_sp_pub_.publish(vs_);
 
 			}
