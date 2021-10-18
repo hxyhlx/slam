@@ -1,0 +1,2 @@
+Navigation
+-DCATKIN_DEVEL_PREFIX=/home/xhe/hexy/navigation/devel -DCMAKE_INSTALL_PREFIX=/home/xhe/hexy/navigation/install -G Unix Makefiles
